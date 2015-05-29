@@ -6,6 +6,10 @@
   <remote name="t2m" fetch="git://github.com/t2m-foxfone/"/>
   <default remote="caf" revision="LNX.LA.3.5.2.1.1" sync-j="4"/>
 
+  <!-- Flame B2G specific SELinux policies -->
+  <remove-project name="platform/external/sepolicy"/>
+  <project name="platform_external_sepolicy" path="external/sepolicy" remote="jhector" revision="b2g-flame-kk"/>
+
   <!-- Flame specific things -->
   <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
   <project name="device/qcom/common" path="device/qcom/common" revision="b2g_kk_3.5"/>
